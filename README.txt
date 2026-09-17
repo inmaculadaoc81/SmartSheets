@@ -77,6 +77,28 @@ SCHEMA.ORG (no existía):
   longitud reales, tomadas del iframe de Google Maps que envió el
   cliente).
 
+AJUSTES ADICIONALES (a petición del cliente, con capturas de pantalla):
+- Corregido el icono del botón flotante de WhatsApp: usaba un icono
+  genérico de burbuja de chat (idéntico al del widget de chat), no el
+  logo real de WhatsApp. Sustituido por el icono correcto en ambos
+  botones flotantes.
+- Botón del chatbot recoloreado a verde (antes salía rosa, el color
+  por defecto del widget de n8n), mismo tamaño que el botón de
+  WhatsApp, y acercados ambos para que queden apilados sin hueco.
+- El botón "Solicita una asesoría gratuita" del banner de CTA
+  apuntaba a un mailto. Cambiado al Cal.com de la familia
+  (cal.com/kelatos/30min) — confirmado por el cliente que es el mismo
+  enlace compartido que usan el resto de las webs.
+- Bajo el H1 se sustituyeron las píldoras de teléfono/WhatsApp por:
+  dirección (C. Joaquín María López, 26, Madrid — misma dirección
+  compartida de la familia) y horario de atención (Lunes a viernes ·
+  09:30–18:00, mismo horario estándar del resto de la familia), y
+  debajo de eso tres botones apilados a ancho completo, reutilizando
+  las clases .btn/.btn-primary/.btn-outline ya existentes del sitio:
+  WhatsApp (verde), "Solicita tu recogida ahora" (mismo enlace de
+  Redsys que usan todas las webs de la familia,
+  sis.redsys.es/tiendaWeb/item/NDk4OzI%3D) y Atención Telefónica.
+
 NO TOCADO / PENDIENTE DE DECISIÓN DEL CLIENTE:
 - El email de contacto del sitio (mailto:hola@smartsheets.es, botón
   "Solicita una asesoría gratuita" del banner de CTA) no coincide con

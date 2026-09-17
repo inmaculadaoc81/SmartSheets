@@ -245,28 +245,30 @@ nav.main-nav a.active::after{
   font-style:italic;
   font-weight:500;
 }
-.hero-contact{
+.hero-info{
   display:flex;
-  gap:14px;
+  gap:22px;
   justify-content:center;
   flex-wrap:wrap;
-  margin-bottom:18px;
+  margin-bottom:20px;
 }
-.hero-contact-item{
+.hero-info-item{
   display:inline-flex;
   align-items:center;
-  gap:8px;
+  gap:7px;
   font-size:14px;
   font-weight:600;
-  color:var(--green-dark);
-  background:var(--bg-light-green);
-  border-radius:999px;
-  padding:9px 16px;
-  transition:background .2s ease, color .2s ease;
+  color:var(--text-gray);
 }
-.hero-contact-item svg{color:var(--green);font-size:15px;}
-.hero-contact-item:hover{background:var(--green);color:#fff;}
-.hero-contact-item:hover svg{color:#fff;}
+.hero-info-item svg{color:var(--green);font-size:16px;}
+.hero-actions{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:11px;
+  max-width:520px;
+  margin:0 auto 28px;
+}
+.hero-action{width:100%;justify-content:center;text-align:center;}
 .hero p.lead{
   font-size:17px;
   color:var(--text-gray);
