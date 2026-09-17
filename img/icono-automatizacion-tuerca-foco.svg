@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 320" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Automatización e ideas</title>
+  <desc id="desc">Engranaje de líneas verdes y bombilla que representa ideas e innovación.</desc>
+  <g stroke="#7fdfa6" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round">
+    <path opacity=".22" d="M54 249h46m-24 22h39m222-204h48m-34 22h24M84 86l16 12m-29 9 10 5m285 128 15-8"/>
+    <path opacity=".38" d="M62 175h31m236 89h32M154 54v20m-14-10h29"/>
+    <g transform="translate(188 184)">
+      <path d="M-15-89h30l5 20a70 70 0 0 1 17 7l18-11 21 21-11 18a70 70 0 0 1 7 17l20 5v30l-20 5a70 70 0 0 1-7 17l11 18-21 21-18-11a70 70 0 0 1-17 7l-5 20h-30l-5-20a70 70 0 0 1-17-7l-18 11-21-21 11-18a70 70 0 0 1-7-17l-20-5v-30l20-5a70 70 0 0 1 7-17l-11-18 21-21 18 11a70 70 0 0 1 17-7z"/>
+      <circle r="40"/>
+      <circle r="17" stroke="#c7f9d6"/>
+    </g>
+    <g transform="translate(306 111)">
+      <path d="M-40-13a42 42 0 1 1 80 17c-5 11-14 15-17 29h-46c-3-14-12-18-17-29a42 42 0 0 1 0-17z" fill="#143d2b" stroke="#baf8ce"/>
+      <path d="M-22 34h44m-42 12h40m-33 12h26m-19 9h12" stroke="#baf8ce"/>
+      <path d="M-12 32v-19l-10-11m34 30v-19L22 2M-12 13h24" stroke="#7fdfa6"/>
+      <path d="M0-63v-14m-44 29-10-10m98 10 10-10M-58-8h-14m130 0h14" stroke="#baf8ce"/>
+      <path d="M-21-14a23 23 0 0 1 20-17" stroke="#d9ffe5" opacity=".85"/>
+    </g>
+    <path d="M253 172c22 0 31-14 34-22" stroke-dasharray="4 10" opacity=".65"/>
+  </g>
+</svg>
