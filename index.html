@@ -7,7 +7,7 @@
 <meta name="description" content="Automatizamos tus procesos en Excel para que trabajes más rápido, con menos errores y mejores decisiones.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -40,20 +40,51 @@
 </header>
 
 <section class="hero" id="inicio">
-  <div class="hero-bg-icon left">
-    <div class="hero-icon-card">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="hero-pattern" aria-hidden="true"></div>
+  <svg class="hero-network" viewBox="0 0 1440 600" preserveAspectRatio="none" aria-hidden="true">
+    <path class="net-line" d="M95 65 L150 185 L195 300"></path>
+    <path class="net-line" d="M65 420 L135 475"></path>
+    <circle class="net-dot" cx="95" cy="65" r="5"></circle>
+    <circle class="net-dot" cx="150" cy="185" r="4"></circle>
+    <circle class="net-dot" cx="65" cy="420" r="5"></circle>
+
+    <path class="net-line" d="M1345 75 L1285 195 L1245 300"></path>
+    <path class="net-line" d="M1375 415 L1300 475"></path>
+    <circle class="net-dot" cx="1345" cy="75" r="5"></circle>
+    <circle class="net-dot" cx="1285" cy="195" r="4"></circle>
+    <circle class="net-dot" cx="1375" cy="415" r="5"></circle>
+  </svg>
+
+  <div class="hero-bg-icon left-top">
+    <div class="hero-icon-card sm">
       <svg class="ic" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"></rect><rect x="14" y="3" width="7" height="7" rx="1"></rect><rect x="14" y="14" width="7" height="7" rx="1"></rect><rect x="3" y="14" width="7" height="7" rx="1"></rect></svg>
     </div>
   </div>
-  <div class="hero-bg-icon right">
+  <div class="hero-bg-icon left-bottom">
+    <div class="hero-icon-card">
+      <svg class="ic" viewBox="0 0 24 24"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+    </div>
+  </div>
+
+  <div class="hero-bg-icon right-top">
+    <div class="hero-icon-card sm">
+      <svg class="ic" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+    </div>
+  </div>
+  <div class="hero-bg-icon right-bottom">
     <div class="hero-icon-card">
       <svg class="ic" viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
     </div>
+    <div class="hero-icon-card gear">
+      <svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"></path></svg>
+    </div>
   </div>
+
   <div class="container">
     <div class="hero-inner">
       <div class="eyebrow"><span class="line"></span>Automatizaciones Excel para empresas<span class="line"></span></div>
-      <h1>Convierte tus datos<br>en <span class="accent">resultados</span></h1>
+      <h1>Convierte tus datos<br>en <em class="accent">resultados</em></h1>
       <p class="lead">Automatizamos tus procesos en Excel para que trabajes más rápido, con menos errores y mejores decisiones.</p>
       <div class="hero-ctas">
         <a href="#contacto" class="btn btn-primary">Solicita una asesoría gratuita
@@ -283,6 +314,17 @@
     </div>
   </div>
 </footer>
+
+<a href="#contacto" class="floating-cta" aria-label="Ir a contacto">
+  <svg class="ic" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+</a>
+
+<script>
+  var header = document.querySelector('header');
+  function onScroll(){ header.classList.toggle('scrolled', window.scrollY > 8); }
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+</script>
 
 </body>
 </html>
