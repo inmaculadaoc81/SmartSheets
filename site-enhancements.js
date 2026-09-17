@@ -1,4 +1,4 @@
-/* SmartSheets: navegación móvil y redes sociales */
+/* SmartSheets: inserción de redes y navegación móvil sin modificar contenidos existentes */
 (function(){
   function ready(){
     var nav=document.querySelector('.nav-wrap');
@@ -88,14 +88,21 @@
     if(footer){
       var grid=footer.querySelector('.footer-grid');
       var columns=grid?grid.querySelectorAll(':scope > .footer-col'):[];
-      if(columns.length>=4){columns[3].remove();}
+      if(columns.length>=4){
+        var follow=columns[3];
+        if(follow)follow.remove();
+      }
       footer.querySelectorAll('.footer-contact li').forEach(function(li){
-        if(li.textContent.indexOf('hola@smartsheets.es')!==-1){li.remove();}
+        if(li.querySelector('path[d^="M4 4h16"]')||li.textContent.indexOf('hola@smartsheets.es')!==-1){li.remove();}
       });
       var navCol=grid&&grid.querySelectorAll(':scope > .footer-col')[1];
       if(navCol){
         var navLinks=navCol.querySelector('ul');
-        if(navLinks){navLinks.querySelectorAll('a').forEach(function(a){if(a.textContent.trim()==='Nosotros')a.remove();});}
+        if(navLinks){
+          navLinks.querySelectorAll('a').forEach(function(a){
+            if(a.textContent.trim()==='Nosotros')a.remove();
+          });
+        }
       }
     }
   }
