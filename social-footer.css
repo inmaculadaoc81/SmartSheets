@@ -1,0 +1,29 @@
+/* Redes sociales antes del mapa: diseño de franja clara con interior blanco. */
+.social-section{background:#eafaff;padding:22px 20px;margin:54px 0 26px;border-radius:12px;}
+.social-section-inner{background:#fff;display:flex;align-items:center;justify-content:space-between;gap:28px;padding:24px 32px;border-radius:4px;}
+.social-section h2{font-family:'Poppins',sans-serif;font-weight:800;color:#103750;font-size:clamp(21px,2.6vw,29px);line-height:1.2;margin:0;}
+.social-links{display:flex;align-items:center;justify-content:flex-end;gap:12px;flex-wrap:wrap;}
+.social-link{display:inline-flex;align-items:center;justify-content:center;flex:0 0 54px;width:54px;height:44px;border-radius:4px;transition:transform .2s ease,filter .2s ease;}
+.social-link:hover{transform:translateY(-3px);filter:brightness(1.12);}
+.social-link:focus-visible{outline:3px solid #0e7150;outline-offset:3px;}
+.social-link img{width:25px;height:25px;display:block;filter:brightness(0) invert(1);}
+.social-link.facebook{background:#1877f2;}
+.social-link.instagram{background:#b00063;}
+.social-link.youtube{background:#b8200e;}
+.social-link.tiktok{background:#101010;}
+.social-link.x-twitter{background:#101010;}
+.social-link.snapchat{background:#ffad1d;}
+.social-link.snapchat img{filter:brightness(0);}
+/* Tres columnas equilibradas, sin correo ni enlaces sociales duplicados en el footer. */
+footer .footer-grid{grid-template-columns:minmax(190px,1.1fr) minmax(160px,.85fr) minmax(220px,1.1fr);gap:clamp(30px,5vw,82px);align-items:start;}
+footer .footer-logo{margin:0;}
+footer .footer-logo .logo-img{height:auto;max-width:200px;width:100%;object-fit:contain;}
+footer .footer-col h5{margin-bottom:16px;}
+footer .footer-col ul li{margin-bottom:10px;}
+footer .footer-contact li{align-items:center;gap:10px;overflow-wrap:anywhere;}
+footer .footer-contact li svg{width:17px;height:17px;margin-top:0;flex:0 0 17px;}
+footer .footer-contact a{color:#adc0b5;}
+footer .footer-contact a:hover{color:#fff;}
+@media(max-width:800px){.social-section-inner{flex-direction:column;text-align:center;padding:26px 20px;}.social-links{justify-content:center;}footer .footer-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:36px;}}
+@media(max-width:540px){.social-section{padding:12px;margin:38px 0 18px;}.social-section-inner{padding:22px 12px;gap:20px;}.social-links{gap:9px;}.social-link{flex-basis:44px;width:44px;height:42px;}.social-link img{width:23px;height:23px;}footer .footer-grid{grid-template-columns:1fr;gap:28px;}footer .footer-logo .logo-img{max-width:180px;}}
+@media(prefers-reduced-motion:reduce){.social-link{transition:none;}.social-link:hover{transform:none;}}
