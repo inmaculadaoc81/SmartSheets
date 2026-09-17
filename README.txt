@@ -99,6 +99,31 @@ AJUSTES ADICIONALES (a petición del cliente, con capturas de pantalla):
   Redsys que usan todas las webs de la familia,
   sis.redsys.es/tiendaWeb/item/NDk4OzI%3D) y Atención Telefónica.
 
+AJUSTES ADICIONALES (a petición del cliente, con captura de pantalla):
+- BUG REAL — el botón "Solicita tu recogida ahora" (enlace de Redsys)
+  no aplicaba a este negocio, no hay servicio de recogida. Sustituido
+  por "Agendar una cita", que enlaza a #cita.
+- Añadida una sección nueva #cita con el iframe de Cal.com embebido
+  de verdad en la página (cal.com/kelatos/30min), no solo un enlace
+  externo — antes no existía ninguna forma de reservar cita desde la
+  propia web. Añadido también al menú de navegación ("Agendar cita").
+- Bajo la dirección: "Aparcamiento público: a pocos metros de C.
+  Blasco de Garay, 61". Bajo el horario: "Sábados, domingos y días
+  festivos estamos cerrados". Reestructurada la fila de dirección/
+  horario del hero a dos líneas (título + subtexto) para que quepan
+  bien.
+- Quitados el párrafo bajo los botones y los dos botones "Solicita
+  una asesoría gratuita"/"Ver cómo funciona" del hero (marcados en la
+  captura): quedaban redundantes con los tres botones ya añadidos
+  antes (WhatsApp/cita/teléfono).
+- Botón flotante del chatbot: recoloreado de verde a verde oscuro
+  (--dark, #0c2e20) para distinguirlo del botón de WhatsApp — antes
+  ambos eran del mismo verde y costaba diferenciarlos. La separación
+  entre ambos botones ahora se calcula en tiempo real a partir de la
+  posición real del botón de WhatsApp (antes usaba una distancia fija
+  que no coincidía con el tamaño real del widget y dejaba un hueco
+  grande).
+
 NO TOCADO / PENDIENTE DE DECISIÓN DEL CLIENTE:
 - El email de contacto del sitio (mailto:hola@smartsheets.es, botón
   "Solicita una asesoría gratuita" del banner de CTA) no coincide con
