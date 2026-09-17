@@ -124,7 +124,46 @@ AJUSTES ADICIONALES (a petición del cliente, con captura de pantalla):
   que no coincidía con el tamaño real del widget y dejaba un hueco
   grande).
 
+AJUSTES ADICIONALES (a petición del cliente, con capturas de pantalla):
+- BUG REAL — el banner "¿Listo para automatizar tus procesos en
+  Excel?" (con su botón "Solicita una asesoría gratuita") quedaba
+  redundante con la nueva sección #cita y con el resto de CTAs del
+  hero. Eliminado, sin tocar el formulario/mapa que sigue en la misma
+  sección #contacto justo debajo.
+- Añadida sección de reseñas/opiniones ("Lo que dicen de nosotros en
+  Google"), con enlace a la ficha de Google
+  (maps.app.goo.gl/1CCekkw4CVzYMvmP6), antes de la fila de logos de
+  clientes.
+- Añadida una sección de texto SEO para Google antes del footer,
+  redactada sin inventar cifras ni datos no proporcionados.
+- El mapa del formulario de contacto estaba al lado del formulario
+  (dos columnas); cambiado a una sola columna para que quede debajo,
+  como se pidió.
+- Fila de dirección/horario del hero: reestructurada como una tarjeta
+  con fondo blanco y separador vertical entre las dos columnas, para
+  que se vean claramente divididas (antes quedaban amontonadas/
+  solapadas en pantallas donde no cabían en una sola fila).
+- BUG REAL — la casilla de política de privacidad del formulario: el
+  checkbox y el texto/enlace estaban como elementos flex separados,
+  lo que hacía que el texto se partiera en dos líneas con un hueco
+  grande respecto a la casilla. Agrupado el texto en un único bloque
+  junto al checkbox, en una sola línea.
+- Botón flotante de WhatsApp simplificado (degradado y sombra
+  reducidos a un color plano, "más simple" como se pidió) y la
+  posición del botón del chatbot ahora se calcula leyendo la posición
+  real del botón de WhatsApp en cada momento (no un valor fijo
+  adivinado), con varios reintentos tras la carga para cubrir que el
+  widget de chat tarde en montarse.
+
 NO TOCADO / PENDIENTE DE DECISIÓN DEL CLIENTE:
+- El recuadro de reserva de Cal.com (sección #cita) muestra el
+  nombre "Kelatos Reparaciones" y un texto de taller de reparación
+  ("trae tu equipo a nuestro taller...") en vez de contenido de
+  SmartSheets. Ese texto pertenece a la configuración del propio
+  evento en la cuenta de Cal.com (cal.com/kelatos/30min), compartida
+  con el resto de webs de la familia — no se puede corregir desde el
+  código de esta web. Hay que editarlo directamente en el panel de
+  Cal.com, o crear un evento de Cal.com propio para SmartSheets.
 - El email de contacto del sitio (mailto:hola@smartsheets.es, botón
   "Solicita una asesoría gratuita" del banner de CTA) no coincide con
   el dominio real confirmado (excelautomatizaciones.com). No se ha
