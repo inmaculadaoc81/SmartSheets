@@ -236,7 +236,7 @@ nav.main-nav a.active::after{
   font-weight:900;
   letter-spacing:-1.5px;
   line-height:1.08;
-  margin-bottom:20px;
+  margin-bottom:36px;
   color:var(--text-dark);
 }
 .hero h1 .accent{
@@ -250,7 +250,7 @@ nav.main-nav a.active::after{
   grid-template-columns:1fr 1px 1fr;
   gap:24px;
   max-width:640px;
-  margin:0 auto 20px;
+  margin:32px auto 20px;
   padding:18px 22px;
   background:#fff;
   border:1px solid var(--border-light);
@@ -320,7 +320,7 @@ nav.main-nav a.active::after{
 .hero-feature svg{color:var(--green);font-size:17px;}
 
 /* ===== REVIEWS ===== */
-.reviews{padding:56px 0 0;}
+.reviews{padding:20px 0 0;}
 .reviews-card{
   background:linear-gradient(135deg,var(--green-darker),var(--dark));
   border-radius:22px;
@@ -352,7 +352,7 @@ nav.main-nav a.active::after{
 
 /* ===== TRUSTED ===== */
 .trusted{
-  padding:36px 0 56px;
+  padding:36px 0 16px;
   text-align:center;
 }
 .trusted-label{
@@ -818,6 +818,13 @@ footer{
   transition:background .2s ease;
 }
 .floating-cta:hover{background:var(--green-dark);}
+
+/* Keep n8n's toggle exactly one small gap above WhatsApp. */
+#n8n-chat .chat-window-toggle,
+#n8n-chat [class*="chat-window-toggle"]{
+  position:fixed!important;
+  transform:none!important;
+}
 
 /* ===== RESPONSIVE ===== */
 @media (max-width:1180px){
