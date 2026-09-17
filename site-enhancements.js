@@ -1,5 +1,11 @@
-/* SmartSheets: inserción de redes y navegación móvil sin modificar contenidos existentes */
+/* SmartSheets: redes, navegación móvil y mejoras editoriales. */
 (function(){
+  // Cargar los estilos nuevos antes de montar la página, sin modificar el HTML existente.
+  ['typography-layout.css','cal-booking.css'].forEach(function(href){
+    if(!document.querySelector('link[href="'+href+'"]')){
+      var link=document.createElement('link');link.rel='stylesheet';link.href=href;document.head.appendChild(link);
+    }
+  });
   function ready(){
     var nav=document.querySelector('.nav-wrap');
     var menu=nav&&nav.querySelector('nav.main-nav');
@@ -104,6 +110,13 @@
           });
         }
       }
+    }
+    // Activar la maquetación y cambiar la URL de reservas mediante el script local.
+    if(!document.querySelector('script[src="editorial-enhancements.js"]')){
+      var editorial=document.createElement('script');
+      editorial.src='editorial-enhancements.js';
+      editorial.defer=true;
+      document.body.appendChild(editorial);
     }
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',ready);else ready();
