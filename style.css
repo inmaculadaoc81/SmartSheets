@@ -328,16 +328,18 @@ nav.main-nav a.active::after{
   gap:44px;
   flex-wrap:wrap;
 }
-.trusted-logo{
-  display:flex;
-  align-items:center;
-  gap:9px;
-  font-weight:700;
-  font-size:15px;
-  color:#9aa6a0;
-  letter-spacing:.3px;
+.trusted-logo-img{
+  height:26px;
+  width:auto;
+  opacity:.55;
+  filter:grayscale(1);
+  transition:opacity .2s ease, filter .2s ease, transform .2s ease;
 }
-.trusted-logo svg{font-size:18px;color:#b7c1bc;}
+.trusted-logo-img:hover{
+  opacity:1;
+  filter:grayscale(0);
+  transform:translateY(-2px);
+}
 
 /* ===== SOLUTIONS ===== */
 .solutions{
