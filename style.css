@@ -555,10 +555,7 @@ nav.main-nav a.active::after{
   font-weight:700;
   margin-bottom:6px;
 }
-.how-step p{
-  font-size:13px;
-  color:var(--text-gray);
-}
+.how-step p{font-size:13px;color:var(--text-gray);}
 .how-arrow{
   color:#c7d6cd;
   font-size:20px;
@@ -567,17 +564,24 @@ nav.main-nav a.active::after{
 }
 
 /* ===== CITA (CAL.COM) ===== */
-.cita{padding:80px 0 56px;text-align:left;background:var(--bg-light-green-2);}
-.cita-layout{display:grid;grid-template-columns:minmax(0, .8fr) minmax(0, 1.6fr);gap:36px;align-items:center;}
-.cita-copy{min-width:0;}
+.cita{
+  padding:72px 0;
+  text-align:left;
+  background:var(--bg-light-green-2);
+}
+.cita-layout{
+  display:grid;
+  grid-template-columns:minmax(240px,.75fr) minmax(0,1.65fr);
+  align-items:center;
+  gap:38px;
+}
 .cita-copy .eyebrow{justify-content:flex-start;}
-.cita-copy .section-title{text-align:left;font-size:clamp(28px,2.8vw,38px);line-height:1.2;}
-.cita-copy .section-sub{text-align:left;margin:0;max-width:340px;}
+.cita-copy .section-title{text-align:left;font-size:34px;line-height:1.2;}
+.cita-copy .section-sub{text-align:left;margin:0;}
 .cal{
   width:100%;
   max-width:none;
-  min-width:0;
-  height:610px;
+  height:580px;
   border:0;
   border-radius:0;
   margin:0;
@@ -586,15 +590,13 @@ nav.main-nav a.active::after{
   background:transparent;
 }
 @media (max-width:900px){
-  .cita-layout{grid-template-columns:1fr;gap:26px;}
-  .cita-copy .eyebrow{justify-content:center;}
-  .cita-copy .section-title,.cita-copy .section-sub{text-align:center;}
-  .cita-copy .section-sub{margin:0 auto;max-width:560px;}
-  .cal{height:610px;}
+  .cita-layout{grid-template-columns:1fr;gap:28px;}
+  .cita-copy .section-title{font-size:30px;}
+  .cal{height:680px;}
 }
 @media (max-width:640px){
-  .cita{padding:56px 0 36px;}
-  .cal{height:720px;}
+  .cita{padding:56px 0;}
+  .cal{height:760px;}
 }
 
 /* ===== CTA BANNER ===== */
@@ -626,8 +628,7 @@ nav.main-nav a.active::after{
   flex-wrap:wrap;
 }
 .cta-note{
-  display:flex;
-  align-items:center;gap:7px;
+  display:flex;align-items:center;gap:7px;
   font-size:13px;color:var(--text-gray);
   margin-top:10px;
   justify-content:center;
@@ -841,6 +842,16 @@ footer{
   transform:none!important;
 }
 
+/* SVG lineal de automatización y creatividad, situado sobre el texto del bloque. */
+.why-image::before{
+  background-image:url('img/icono-automatizacion-tuerca-foco.svg');
+  background-repeat:no-repeat;
+  background-position:center 4%;
+  background-size:min(86%, 390px) auto;
+  opacity:1;
+  pointer-events:none;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width:1180px){
   .hero-side-img{display:none;}
@@ -865,6 +876,7 @@ footer{
   .trusted-logos{gap:24px;}
   .floating-cta{width:48px;height:48px;font-size:19px;bottom:16px;right:16px;}
   .hero-glow{width:600px;height:600px;}
+  .why-image::before{background-size:min(88%, 330px) auto;}
 }
 @media (prefers-reduced-motion: reduce){
   .hero-glow,.hero-side-img{animation:none;}
