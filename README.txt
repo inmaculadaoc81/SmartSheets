@@ -155,6 +155,21 @@ AJUSTES ADICIONALES (a petición del cliente, con capturas de pantalla):
   adivinado), con varios reintentos tras la carga para cubrir que el
   widget de chat tarde en montarse.
 
+AJUSTES ADICIONALES (a petición del cliente, con capturas de pantalla):
+- Hero reordenado: los 3 iconos (Más productividad/Datos más seguros/
+  Resultados medibles) ahora van justo debajo del H1, antes de la
+  tarjeta de dirección/horario y de los 3 botones de acción.
+- Orden de secciones invertido: "Empresas que ya confían en nosotros"
+  (logos de clientes) ahora va antes que la sección de reseñas de
+  Google (antes era al revés).
+- Sección de contacto rediseñada siguiendo la estructura de otra web
+  de la familia (ThermomixTech) que el cliente pasó como referencia:
+  columna izquierda con kicker + pregunta + texto + teléfono de
+  atención, columna derecha con el formulario (sin la tarjeta blanca
+  con sombra que tenía antes), y el mapa de Google a ancho completo
+  debajo de ambas columnas (antes iba al lado del formulario, en su
+  propia columna).
+
 NO TOCADO / PENDIENTE DE DECISIÓN DEL CLIENTE:
 - El recuadro de reserva de Cal.com (sección #cita) muestra el
   nombre "Kelatos Reparaciones" y un texto de taller de reparación
