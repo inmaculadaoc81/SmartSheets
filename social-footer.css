@@ -25,5 +25,21 @@ footer .footer-contact li svg{width:17px;height:17px;margin-top:0;flex:0 0 17px;
 footer .footer-contact a{color:#adc0b5;}
 footer .footer-contact a:hover{color:#fff;}
 @media(max-width:800px){.social-section-inner{flex-direction:column;text-align:center;padding:26px 20px;}.social-links{justify-content:center;}footer .footer-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:36px;}}
-@media(max-width:540px){.social-section{padding:12px;margin:38px 0 18px;}.social-section-inner{padding:22px 12px;gap:20px;}.social-links{gap:9px;}.social-link{flex-basis:44px;width:44px;height:42px;}.social-link img{width:23px;height:23px;}footer .footer-grid{grid-template-columns:1fr;gap:28px;}footer .footer-logo .logo-img{max-width:180px;}}
+@media(max-width:540px){
+  .social-section{padding:12px;margin:38px 0 18px;}
+  .social-section-inner{padding:22px 12px;gap:20px;}
+  .social-links{gap:9px;}
+  .social-link{flex-basis:44px;width:44px;height:42px;}
+  .social-link img{width:23px;height:23px;}
+  /* El logo ocupa la fila superior; navegación y contacto comparten la siguiente. */
+  footer .footer-grid{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);column-gap:16px;row-gap:28px;}
+  footer .footer-grid>.footer-col:first-child{grid-column:1/-1;}
+  footer .footer-grid>.footer-col:not(:first-child){min-width:0;}
+  footer .footer-col h5{font-size:14px;}
+  footer .footer-col ul li,footer .footer-contact li{font-size:12px;line-height:1.5;}
+  footer .footer-col ul li a,footer .footer-contact a{font-size:12px;overflow-wrap:anywhere;}
+  footer .footer-contact li{gap:6px;align-items:flex-start;}
+  footer .footer-contact li svg{width:14px;height:14px;flex:0 0 14px;margin-top:2px;}
+  footer .footer-logo .logo-img{max-width:180px;}
+}
 @media(prefers-reduced-motion:reduce){.social-link{transition:none;}.social-link:hover{transform:none;}}
