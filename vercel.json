@@ -1,1 +1,21 @@
-{"cleanUrls":true,"trailingSlash":false}
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/sitemap_index.xml",
+      "destination": "/sitemap.xml",
+      "permanent": true
+    },
+    {
+      "source": "/:wp(.*-sitemap\\d*\\.xml)",
+      "destination": "/sitemap.xml",
+      "permanent": true
+    },
+    {
+      "source": "/((?!(?:editorial-enhancements\\.js|editorial-enhancements|mobile-navigation\\.css|typography-layout\\.css|site-enhancements\\.js|mobile-navigation|site-enhancements|social-footer\\.css|typography-layout|hero-buttons\\.css|cal-booking\\.css|social-footer|hero-buttons|package\\.json|cal-booking|sitemap\\.xml|vercel\\.json|index\\.html|README\\.txt|robots\\.txt|style\\.css|_vercel|package|sitemap|README|robots|vercel|index|style|api|img)(?:[/.]|$)).+)",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
+}
