@@ -44,7 +44,7 @@
         }
       });
       window.addEventListener('resize',function(){
-        if(window.innerWidth>980){
+        if(window.innerWidth>1080){
           menu.classList.remove('is-open');
           toggle.setAttribute('aria-expanded','false');
           toggle.setAttribute('aria-label','Abrir menú');

@@ -189,3 +189,14 @@ NO TOCADO / PENDIENTE DE DECISIÓN DEL CLIENTE:
   plantilla original, no clientes reales — no se han tocado en esta
   pasada, pero no deberían publicarse como si fueran clientes
   reales de SmartSheets.
+
+BLOG (/blog):
+- Los artículos NO viven en este repositorio: los genera y publica el agente
+  SEO de Kelatos (Agentes V2 → organización «SmartSheets», clave smartsheets)
+  y se leen en vivo de la API pública de Kelatos, sin token:
+  https://db.affirmatechnology.com/kelatos-api/publico/blog?org=smartsheets
+- api/blog.js + lib/blog.js generan /blog y /blog/<slug> en el servidor
+  (copian cabecera, pie, WhatsApp, cookies y site-enhancements.js de index.html).
+- api/sitemap.js genera /sitemap.xml (se eliminó el sitemap.xml estático).
+- Estilos en blog.css. Enlace «Blog» en el menú (escritorio y móvil) y en el pie.
+- vercel.json redirige a la home las URLs antiguas; el blog queda fuera.

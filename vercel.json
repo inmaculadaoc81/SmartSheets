@@ -1,6 +1,14 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "functions": {
+    "api/blog.js": { "includeFiles": "index.html" }
+  },
+  "rewrites": [
+    { "source": "/blog", "destination": "/api/blog" },
+    { "source": "/blog/:slug", "destination": "/api/blog?slug=:slug" },
+    { "source": "/sitemap.xml", "destination": "/api/sitemap" }
+  ],
   "redirects": [
     {
       "source": "/sitemap_index.xml",
@@ -13,7 +21,7 @@
       "permanent": true
     },
     {
-      "source": "/((?!(?:editorial-enhancements\\.js|editorial-enhancements|mobile-navigation\\.css|typography-layout\\.css|site-enhancements\\.js|mobile-navigation|site-enhancements|social-footer\\.css|typography-layout|hero-buttons\\.css|cal-booking\\.css|social-footer|hero-buttons|package\\.json|cal-booking|sitemap\\.xml|vercel\\.json|index\\.html|README\\.txt|robots\\.txt|style\\.css|_vercel|package|sitemap|README|robots|vercel|index|style|api|img)(?:[/.]|$)).+)",
+      "source": "/((?!(?:editorial-enhancements\\.js|editorial-enhancements|mobile-navigation\\.css|typography-layout\\.css|site-enhancements\\.js|mobile-navigation|site-enhancements|social-footer\\.css|typography-layout|hero-buttons\\.css|cal-booking\\.css|social-footer|hero-buttons|package\\.json|cal-booking|sitemap\\.xml|vercel\\.json|index\\.html|README\\.txt|robots\\.txt|style\\.css|_vercel|package|sitemap|README|robots|vercel|index|style|blog|api|img)(?:[/.]|$)).+)",
       "destination": "/",
       "permanent": true
     }
